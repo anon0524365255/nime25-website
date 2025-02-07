@@ -34,7 +34,24 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
 </div>
+
+</div>
+
+### Patch Notes
+
+### Reflections
 
 ## Modular Synthesizer
 
@@ -57,6 +74,19 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
+</div>
+
 </div>
 
 ## 808 Snare
@@ -80,13 +110,26 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
+</div>
+
 </div>
 
 ## Loudness Compensation
 
 <div style="position: relative; padding-top: 10px%;">
   <video
-    id="808snare-video"
+    id="loudness-video"
     class="video-js"
     controls
     preload="auto"
@@ -103,13 +146,26 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="loudness-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
+</div>
+
 </div>
 
 ## Latent Feature Control
 
 <div style="position: relative; padding-top: 10px%;">
   <video
-    id="808snare-video"
+    id="latent-video"
     class="video-js"
     controls
     preload="auto"
@@ -126,13 +182,26 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
+</div>
+
 </div>
 
 ## Classification + Parallel Timbre Remapping
 
 <div style="position: relative; padding-top: 10px%;">
   <video
-    id="808snare-video"
+    id="classification-video"
     class="video-js"
     controls
     preload="auto"
@@ -149,13 +218,26 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
+</div>
+
 </div>
 
 ## Multiple Timescale Morphing
 
 <div style="position: relative; padding-top: 10px%;">
   <video
-    id="808snare-video"
+    id="adsr-video"
     class="video-js"
     controls
     preload="auto"
@@ -172,13 +254,26 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
+</div>
+
 </div>
 
 ## Multiple Timescale + Multiple Feature Morphing
 
 <div style="position: relative; padding-top: 10px%;">
   <video
-    id="808snare-video"
+    id="adsr-multi-video"
     class="video-js"
     controls
     preload="auto"
@@ -195,6 +290,69 @@ More details coming soon.
       >
     </p>
   </video>
+
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video" style="padding-top:10px; padding-left: 35%">
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+    </label>
+    <label class="btn btn-outline-secondary">
+        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+    </label>
 </div>
 
-  <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+</div>
+
+<script>
+
+    let selected = "btn-secondary";
+    let deselected = "btn-outline-secondary";
+
+    jQuery("document").ready(function() {
+        jQuery(".audio-switch").each(function() {
+            var videoId = jQuery(this).attr("video-id");
+
+            jQuery(this).find("input").each(function() {
+                var button = jQuery(this);
+                var checked = button.attr("checked");
+                var label = button.parent();
+                if (typeof checked !== 'undefined' && checked !== false) {
+                    label.removeClass(deselected);
+                    label.addClass(selected);
+                } else {
+                    label.removeClass(selected);
+                    label.addClass(deselected);
+                }
+                button.click(function() {
+                    let mix = button.attr("value");
+                    switchAudio(videoId, mix);
+
+                    jQuery(this).parent().siblings().removeClass(selected).addClass(deselected);
+                    label.addClass(selected);
+                    label.removeClass(deselected);
+                });
+            });
+        });
+    });
+
+
+    function switchAudio(videoId, mix) {
+        var player = videojs(videoId);
+        var tracks = player.audioTracks();
+        if (tracks.length > 1) {
+            if (mix === "mix") {
+                tracks[0].enabled = true;
+            } else if (mix === "drum") {
+                tracks[1].enabled = true;
+            } else if (mix === "synth") {
+                tracks[2].enabled = true;
+            }
+        } else {
+            console.log("Only one video track");
+        }
+    };
+</script>
+
+<script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
