@@ -265,7 +265,7 @@ More details coming soon.
     height="300"
     data-setup="{}"
   >
-    <source src="https://customer-c3u274buzk2jtvrk.cloudflarestream.com/0fa2ae502b3b143bb9dd5135f9c4b321/manifest/video.m3u8" type="application/x-mpegURL" />
+    <source src="https://customer-c3u274buzk2jtvrk.cloudflarestream.com/b227a5c067c24e021dca80e506d96494/manifest/video.m3u8" type="application/x-mpegURL" />
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
       web browser that
