@@ -35,7 +35,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -45,7 +45,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -75,7 +75,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -85,7 +85,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -115,7 +115,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -125,7 +125,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -154,7 +154,7 @@ More details coming soon.
       >
     </p>
   </video>
-
+<!-- 
 <div class="btn-group audio-switch" data-toggle="buttons" video-id="loudness-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
@@ -165,7 +165,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -195,7 +195,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -205,7 +205,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -235,7 +235,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -245,7 +245,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -275,7 +275,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -285,7 +285,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
@@ -315,7 +315,7 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video" style="padding-top:10px; padding-left: 35%">
+<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
     </label>
@@ -325,7 +325,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div>
+</div> -->
 
 </div>
 
