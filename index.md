@@ -89,6 +89,10 @@ More details coming soon.
 
 </div>
 
+### Patch Notes
+
+### Reflections
+
 ## 808 Snare
 
 <div style="position: relative; padding-top: 10px%;">
@@ -124,6 +128,10 @@ More details coming soon.
 </div>
 
 </div>
+
+### Patch Notes
+
+### Reflections
 
 ## Loudness Compensation
 
@@ -161,6 +169,10 @@ More details coming soon.
 
 </div>
 
+### Patch Notes
+
+### Reflections
+
 ## Latent Feature Control
 
 <div style="position: relative; padding-top: 10px%;">
@@ -196,6 +208,10 @@ More details coming soon.
 </div>
 
 </div>
+
+### Patch Notes
+
+### Reflections
 
 ## Classification + Parallel Timbre Remapping
 
@@ -233,6 +249,10 @@ More details coming soon.
 
 </div>
 
+### Patch Notes
+
+### Reflections
+
 ## Multiple Timescale Morphing
 
 <div style="position: relative; padding-top: 10px%;">
@@ -268,6 +288,10 @@ More details coming soon.
 </div>
 
 </div>
+
+### Patch Notes
+
+### Reflections
 
 ## Multiple Timescale + Multiple Feature Morphing
 
