@@ -35,9 +35,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -45,7 +45,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -75,9 +75,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -85,7 +85,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -115,9 +115,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -125,7 +125,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -154,10 +154,10 @@ More details coming soon.
       >
     </p>
   </video>
-<!-- 
+
 <div class="btn-group audio-switch" data-toggle="buttons" video-id="loudness-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -165,7 +165,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -195,9 +195,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -205,7 +205,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -235,9 +235,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -245,7 +245,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -275,9 +275,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -285,7 +285,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -315,9 +315,9 @@ More details coming soon.
     </p>
   </video>
 
-<!-- <div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video" style="padding-top:10px; padding-left: 35%">
+<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video" style="padding-top:10px; padding-left: 35%">
     <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mix" autocomplete="off" checked> Mixed
+        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
     </label>
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
@@ -325,7 +325,7 @@ More details coming soon.
     <label class="btn btn-outline-secondary">
         <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
     </label>
-</div> -->
+</div>
 
 </div>
 
@@ -333,8 +333,35 @@ More details coming soon.
 
     let selected = "btn-secondary";
     let deselected = "btn-outline-secondary";
+    let audioTracks = {};
 
     jQuery("document").ready(function() {
+        
+        jQuery("video").each(function() {
+          var  player = videojs(this);
+          audioTracks[player.id()] = {};
+
+          player.on("loadeddata", function() {
+            const tracks = this.audioTracks();
+            for (var i = 0; i < tracks.length; i++)
+            {
+              var track = tracks[i];
+              if (track.label === "original") {
+                track.enabled = true;
+                track.label = "mixed";
+                audioTracks[this.id()]["mixed"] = track;
+              } else if (track.label === "synth") {
+                track.enabled = false;
+                audioTracks[this.id()]["synth"] = track;
+              } else if (track.label === "drum") {
+                track.enabled = false;
+                audioTracks[this.id()]["drum"] = track;
+              }
+            }
+          })
+        });
+
+
         jQuery(".audio-switch").each(function() {
             var videoId = jQuery(this).attr("video-id");
 
@@ -365,14 +392,21 @@ More details coming soon.
     function switchAudio(videoId, mix) {
         var player = videojs(videoId);
         var tracks = player.audioTracks();
+        console.log(audioTracks);
         if (tracks.length > 1) {
-            if (mix === "mix") {
-                tracks[0].enabled = true;
-            } else if (mix === "drum") {
-                tracks[1].enabled = true;
-            } else if (mix === "synth") {
-                tracks[2].enabled = true;
-            }
+          for (let i = 0; i < tracks.length; i++) {
+            tracks[i].enabled = false;
+          }
+          audioTracks[videoId][mix].enabled = true;
+          
+          // audioTracks[videoId][mix].enabled = true;
+            // if (mix === "mix") {
+            //     tracks[0].enabled = true;
+            // } else if (mix === "drum") {
+            //     tracks[1].enabled = true;
+            // } else if (mix === "synth") {
+            //     tracks[2].enabled = true;
+            // }
         } else {
             console.log("Only one video track");
         }
