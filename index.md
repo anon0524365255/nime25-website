@@ -9,6 +9,18 @@ layout: post
 title: "Designing Percussive Timbre Remappings: Negotiating Audio Representations and Evolving Parameter Spaces"
 ---
 
+<style>
+  .audio-switch-wrapper {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .audio-switch-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
 # Annotated Portfolio
 
 More details coming soon.
@@ -21,8 +33,6 @@ More details coming soon.
     class="video-js"
     controls
     preload="auto"
-    width="750"
-    height="300"
     data-setup="{}"
   >
     <source src="https://customer-c3u274buzk2jtvrk.cloudflarestream.com/6335d39f2e7e0510f266f6104c1e19e7/manifest/video.m3u8" type="application/x-mpegURL" />
@@ -35,16 +45,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="derailer-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -75,16 +89,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="modular-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -115,16 +133,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="808snare-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -155,16 +177,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="loudness-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="loudness-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -195,16 +221,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="latent-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -235,16 +265,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="classification-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -275,16 +309,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -315,16 +353,20 @@ More details coming soon.
     </p>
   </video>
 
-<div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video" style="padding-top:10px; padding-left: 35%">
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
-    </label>
-    <label class="btn btn-outline-secondary">
-        <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
-    </label>
+<div class="audio-switch-wrapper">
+  <div class="audio-switch-inner">
+    <div class="btn-group audio-switch" data-toggle="buttons" video-id="adsr-multi-video">
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="mixed" autocomplete="off" checked> Mixed
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="drum" autocomplete="off"> Drum Only
+        </label>
+        <label class="btn btn-outline-secondary">
+            <input type="radio" class="btn-check" name="options" value="synth" autocomplete="off"> Synth Only
+        </label>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -339,6 +381,7 @@ More details coming soon.
         
         jQuery("video").each(function() {
           var  player = videojs(this);
+          player.fluid(true);
           audioTracks[player.id()] = {};
 
           player.on("loadeddata", function() {
