@@ -119,9 +119,14 @@ The MIDI note being triggered was varied on inference based on the spectral cent
 
 #### Patch Notes
 This patch uses the timbre remapping approach as presented in the paper applied to a Eurorack 
-modular synthesizer patch. Six parameters are included for modulations and are controlled
+modular synthesizer patch. Five parameters are included for modulations and are controlled
 via CV from an [Expert Sleepers ES-8](https://www.expert-sleepers.co.uk/es8.html).
-Parameters include FM controls, wavetable position, envelope attack/deday time, filter resonance.
+Modules/parameters used for mapping include: a [Make Noise Maths](https://www.makenoisemusic.com/modules/maths/),
+which was used for generating an attack-decay envelope (mapping decay), an [Inelijel Shapeshifter](https://intellijel.com/shop/eurorack/cylonix-shapeshifter/) was the main sound source (mapping FM ratio, FM index, modulator wavetable shape),
+an [Intellijel Polaris](https://intellijel.com/shop/eurorack/polaris/) was used as a low-pass filter (mapping resonance),
+an [Intellijel uVCA](https://intellijel.com/shop/eurorack/uvca-2/) was used as a voltage controlled amplified (VCA),
+and reverb was added with a [Mutable Instuments Clouds](https://pichenettes.github.io/mutable-instruments-documentation/modules/clouds/). One channel is used to trigger the envelope on Maths, and another CV was being mapped to Clouds dry/wet, but
+was removed during performance.
 
 #### Reflections
 
@@ -443,7 +448,7 @@ by squares. A brief description of each concept is provided below the graph.
 
 <br />
 
-**Direct/Dynamic Mapping**: Mappings made in addition or in parallel to timbre remapping. These include directly mapping loudness from the input loudness to the synthesizer loudness, or mapping specific features to controls such as envelope controls to effect more dynamic response to the input.
+**Direct Mapping**: Mappings made in addition or in parallel to timbre remapping. These include directly mapping loudness from the input loudness to the synthesizer loudness, or mapping specific features to controls such as envelope controls to effect more dynamic response to the input.
 
 **High-Level Control**: Patches that enabled high-level modifications to mappings/synthesized sounds.
 
