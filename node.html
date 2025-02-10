@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>D3 Force-Directed Graph with Clickable Nodes</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      svg {
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+      }
+
+      line.link {
+        stroke: #999;
+        stroke-opacity: 0.6;
+        stroke-width: 2px;
+      }
+
+      circle.node {
+        stroke: #fff;
+        stroke-width: 1.5px;
+        cursor: pointer; /* So it's clear the nodes are clickable */
+      }
+
+      text.label {
+        pointer-events: none; /* Mouse clicks pass through to the circle */
+        font-size: 0.8rem;
+        text-anchor: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>D3 Force Layout with Clickable Nodes</h1>
+    <svg id="graph" width="800" height="600"></svg>
+
+    <script>
+      // --------------------------------------------------
+      // 1. Define data (with optional 'url' property)
+      // --------------------------------------------------
+      const nodesData = [
+        // Example nodes with a URL
+        { id: "Example 1", type: "example", url: "https://example.com/video1" },
+        { id: "Example 2", type: "example", url: "https://example.com/video2" },
+        { id: "Example 3", type: "example", url: "https://example.com/video3" },
+        { id: "Example 4", type: "example", url: "https://example.com/video4" },
+        { id: "Example 5", type: "example", url: "https://example.com/video5" },
+        { id: "Example 6", type: "example", url: "https://example.com/video6" },
+        { id: "Example 7", type: "example", url: "https://example.com/video7" },
+        { id: "Example 8", type: "example", url: "https://example.com/video8" },
+
+        // Concept nodes (might not need URLs)
+        { id: "Concept A", type: "concept" },
+        { id: "Concept B", type: "concept" },
+        { id: "Concept C", type: "concept" },
+        { id: "Concept D", type: "concept" }
+      ];
+
+      const linksData = [
+        { source: "Example 1", target: "Concept A" },
+        { source: "Example 2", target: "Concept A" },
+        { source: "Example 2", target: "Concept B" },
+        { source: "Example 3", target: "Concept B" },
+        { source: "Example 4", target: "Concept C" },
+        { source: "Example 5", target: "Concept D" },
+        { source: "Example 6", target: "Concept A" },
+        { source: "Example 7", target: "Concept B" },
+        { source: "Example 8", target: "Concept C" }
+      ];
+
+      // --------------------------------------------------
+      // 2. Create SVG and Force Simulation
+      // --------------------------------------------------
+      const svg = d3.select("#graph");
+      const width = +svg.attr("width");
+      const height = +svg.attr("height");
+
+      // Node radius
+      const nodeRadius = 14;
+
+      // Create a force simulation
+      const simulation = d3
+        .forceSimulation(nodesData)
+        .force(
+          "link",
+          d3.forceLink(linksData)
+            .id((d) => d.id)
+            .distance(150) // Increase link distance if you want more space
+        )
+        .force("charge", d3.forceManyBody().strength(-10))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(nodeRadius * 2.5));
+
+      // --------------------------------------------------
+      // 3. Add links (as lines)
+      // --------------------------------------------------
+      const link = svg
+        .selectAll("line.link")
+        .data(linksData)
+        .enter()
+        .append("line")
+        .attr("class", "link");
+
+      // --------------------------------------------------
+      // 4. Add nodes (as circles) + text labels
+      // --------------------------------------------------
+      const node = svg
+        .selectAll("circle.node")
+        .data(nodesData)
+        .enter()
+        .append("circle")
+        .attr("class", "node")
+        .attr("r", nodeRadius)
+        .style("fill", (d) => (d.type === "example" ? "#69b3a2" : "#ffa600"))
+        .call(drag(simulation))
+        .on("click", (event, d) => {
+          // Only open link if node has a URL
+          if (d.url) {
+            window.open(d.url, "_blank");
+          }
+        });
+
+      const label = svg
+        .selectAll("text.label")
+        .data(nodesData)
+        .enter()
+        .append("text")
+        .attr("class", "label")
+        .attr("dy", "-1.2em") // Position label slightly above the circle
+        .text((d) => d.id);
+
+      // --------------------------------------------------
+      // 5. Simulation on-tick + boundary clamp
+      // --------------------------------------------------
+      simulation.on("tick", () => {
+        link
+          .attr("x1", (d) => d.source.x)
+          .attr("y1", (d) => d.source.y)
+          .attr("x2", (d) => d.target.x)
+          .attr("y2", (d) => d.target.y);
+
+        node
+          .attr("cx", (d) => {
+            d.x = Math.max(nodeRadius, Math.min(width - nodeRadius, d.x));
+            return d.x;
+          })
+          .attr("cy", (d) => {
+            d.y = Math.max(nodeRadius, Math.min(height - nodeRadius, d.y));
+            return d.y;
+          });
+
+        label
+          .attr("x", (d) => d.x)
+          .attr("y", (d) => d.y);
+      });
+
+      // --------------------------------------------------
+      // 6. Drag Behavior
+      // --------------------------------------------------
+      function drag(simulation) {
+        function dragstarted(event, d) {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+          d.fx = event.x;
+          d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }
+
+        return d3
+          .drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended);
+      }
+    </script>
+  </body>
+</html>

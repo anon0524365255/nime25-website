@@ -9,19 +9,9 @@ layout: post
 title: "Designing Percussive Timbre Remappings: Negotiating Audio Representations and Evolving Parameter Spaces"
 ---
 
-<style>
-  .audio-switch-wrapper {
-    padding-top: 10px;
-    width: 100%;
-  }
-  .audio-switch-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
-
-Website accompanying the NIME 2025 submission.
+Website accompanying the NIME 2025 submission. Appendix PDF with details on feature extraction and 
+neural network hyperparameter tuning coming soon. All code for Max/MSP patches and data-driven
+experiments conducted in Python will be publicly released alongside the paper.
 
 ## Annotated Portfolio
 
@@ -135,7 +125,7 @@ Parameters include FM controls, wavetable position, envelope attack/deday time, 
 
 #### Reflections
 
-(Author B) There was a palpable fragility to the mapping here where tiny changes in dynamics led to very wide timbral changes on the synth. This led to a more subtle and subdued language that tried to navigate some subtle nuances in the notes. As a contrast, some faster was useful to show the melodic capabilities of this mapping and setup.
+(Author B) There was a palpable fragility to the mapping here where tiny changes in dynamics led to very wide timbral changes on the synth. This led to a more subtle and subdued language that tried to navigate some subtle nuances in the notes. As a contrast, some faster playing was useful to show the melodic capabilities of this mapping and setup.
 
 (Author A) This patch reflects a synthesizer patch that I might use in my practice with a modular synth, but with modulations on parameter values from the drum. One affordance of this patch that isn’t shown in the video, but has been musically useful, is the ability to directly modify parameter values via the knobs on the synthesizer or scale the CV values being used for modulation. This enables high-level control in conjunction with the modulation mapping and allows for collaborative performances.
 
@@ -283,9 +273,9 @@ This patch is built from two parallel mappings on the Quantussy synthesizer whic
 
 #### Reflections
 
-(Author A) Having two clear presets opened up some performance possibilities where inter and intra modulations were more distinct and "playable" in the instrument. The additional mapping of loudness to duration allowed for some very fast gestures and rolls, while still retaining clear articulation with the quieter and shorter sounds.
+(Author B) Having two clear presets opened up some performance possibilities where inter and intra modulations were more distinct and "playable" in the instrument. The additional mapping of loudness to duration allowed for some very fast gestures and rolls, while still retaining clear articulation with the quieter and shorter sounds.
 
-(Author B) Similar to the [Derailer patch](#derailer), this patch represents another approach to distinguishing between the different playing zones present on the drum, effectively creating “two instruments.” The classification approach enables two different mappings to be included in parallel, meaning that each parallel path can be modified independent of each other, for example by using two different synthesizers or different feature sets.
+(Author A) Similar to the [Derailer patch](#derailer), this patch represents another approach to distinguishing between the different playing zones present on the drum, effectively creating “two instruments.” The classification approach enables two different mappings to be included in parallel, meaning that each parallel path can be modified independent of each other, for example by using two different synthesizers or different feature sets.
 
 ### Multiple Timescale Morphing
 
@@ -336,12 +326,11 @@ The interface also allowed for transforming and distorting the preset interpolat
 
 During inference, loudness and spectral centroid were also mapped to the interpolation/timbral morphology duration (making it shorter or longer overall) as well as adjusting the attack and release of the ADSR being applied to the Quantussy output.
 
-
 #### Reflections
 
-(Author A) This combination of processes, incorporating multiple timescales of feature mappings and real time analysis, via timescale regression, and additional layers of morphological mappings based on real time descriptor analysis felt the most expressive and dynamic of all the mappings. The nuance and variability afforded by the layers of mappings created a responsive and expressive instrument in terms of timbral, morphological, and dynamic playability. Much like in the [classification example](#classification--parallel-timbre-remapping), the direct control of duration also enabled incredibly fast gestures without any loss in clarity.
+(Author B) This combination of processes, incorporating multiple timescales of feature mappings and real time analysis, via timescale regression, and additional layers of morphological mappings based on real time descriptor analysis felt the most expressive and dynamic of all the mappings. The nuance and variability afforded by the layers of mappings created a responsive and expressive instrument in terms of timbral, morphological, and dynamic playability. Much like in the [classification example](#classification--parallel-timbre-remapping), the direct control of duration also enabled incredibly fast gestures without any loss in clarity.
 
-(Author B) Early experiments with a prototype mapping system identified that sonic morphology of our input sounds mapped poorly onto synthesizer parameters responsible for controlling morphology (e.g., envelope parameters). This patch shows one method for overcoming this limitation through computation of audio features over different timescales and explicit mapping of presets over time.
+(Author A) Early experiments with a prototype mapping system identified that sonic morphology of our input sounds mapped poorly onto synthesizer parameters responsible for controlling morphology (e.g., envelope parameters). This patch shows one method for overcoming this limitation through computation of audio features over different timescales and explicit mapping of presets over time.
 
 ### Latent Feature Control
 
@@ -441,6 +430,28 @@ This patch is similar to the timescale morphing example, using a Quantussy synth
 
 (Author A) Different audio features may be more or less suited to capturing sonic phenomena that are present at different times during the evolution of sound. This patch serves to highlight the ability of our timbre remapping system to support this sort of audio feature pick-n-mix to draw out different sonic attributes across the evolution of a sound. Although not thoroughly investigated here, it points to a line of future work that investigates morphology with audio features.
 
+### Concept Map
+
+Different concepts emerged from patching examples and annotated reflections. The graph
+below presents a visual summary connecting concepts and patches, where circle nodes are
+the different patches (click on a circle to navigate back to the video) and concepts are represented
+by squares. A brief description of each concept is provided below the graph.
+
+<div style="width: 100%;">
+{%- include nime2025_concept_map.html -%}
+</div>
+
+<br />
+
+**Direct/Dynamic Mapping**: Mappings made in addition or in parallel to timbre remapping. These include directly mapping loudness from the input loudness to the synthesizer loudness, or mapping specific features to controls such as envelope controls to effect more dynamic response to the input.
+
+**High-Level Control**: Patches that enabled high-level modifications to mappings/synthesized sounds.
+
+**Mapping Intermodulations**: Distinguishing between intermodulations more explicitly through mapping, where we refer to intermodulations as larger timbral differences coming from different sound sources (e.g., drum head vs. rim). These mappings sought to create more sonic distinction between these sources and used them for timbral performance.
+
+**Morphology**: Evolving timbral and amplitude attributes over time through interpolation across multiple presets or with explicit amplitude envelopes.
+
+**Navigating Pitch**: Intervening on pitch mappings by reducing the emphasis of frequency controls or by quantizing pitch controls and explicitly mapping to MIDI notes.
 
 ## References
 
@@ -448,92 +459,6 @@ Gaver, B., & Bowers, J. (2012). Annotated portfolios. Interactions, 19(4), 40–
 
 Le Vaillant, G., & Dutoit, T. (2024). Latent Space Interpolation of Synthesizer Parameters Using Timbre-Regularized Auto-Encoders. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 32, 3379–3392. IEEE/ACM Transactions on Audio, Speech, and Language Processing. [doi.org/10.1109/TASLP.2024.3426987](https://doi.org/10.1109/TASLP.2024.3426987)
 
-
-
-
-
-<script>
-    let selected = "btn-secondary";
-    let deselected = "btn-outline-secondary";
-    let audioTracks = {};
-
-    jQuery("document").ready(function() {
-        
-        jQuery("video").each(function() {
-          var  player = videojs(this);
-          player.fluid(true);
-          audioTracks[player.id()] = {};
-
-          player.on("loadeddata", function() {
-            const tracks = this.audioTracks();
-            for (var i = 0; i < tracks.length; i++)
-            {
-              var track = tracks[i];
-              if (track.label === "original") {
-                track.enabled = true;
-                track.label = "mixed";
-                audioTracks[this.id()]["mixed"] = track;
-              } else if (track.label === "synth") {
-                track.enabled = false;
-                audioTracks[this.id()]["synth"] = track;
-              } else if (track.label === "drum") {
-                track.enabled = false;
-                audioTracks[this.id()]["drum"] = track;
-              }
-            }
-          })
-        });
-
-
-        jQuery(".audio-switch").each(function() {
-            var videoId = jQuery(this).attr("video-id");
-
-            jQuery(this).find("input").each(function() {
-                var button = jQuery(this);
-                var checked = button.attr("checked");
-                var label = button.parent();
-                if (typeof checked !== 'undefined' && checked !== false) {
-                    label.removeClass(deselected);
-                    label.addClass(selected);
-                } else {
-                    label.removeClass(selected);
-                    label.addClass(deselected);
-                }
-                button.click(function() {
-                    let mix = button.attr("value");
-                    switchAudio(videoId, mix);
-
-                    jQuery(this).parent().siblings().removeClass(selected).addClass(deselected);
-                    label.addClass(selected);
-                    label.removeClass(deselected);
-                });
-            });
-        });
-    });
-
-
-    function switchAudio(videoId, mix) {
-        var player = videojs(videoId);
-        var tracks = player.audioTracks();
-        console.log(audioTracks);
-        if (tracks.length > 1) {
-          for (let i = 0; i < tracks.length; i++) {
-            tracks[i].enabled = false;
-          }
-          audioTracks[videoId][mix].enabled = true;
-          
-          // audioTracks[videoId][mix].enabled = true;
-            // if (mix === "mix") {
-            //     tracks[0].enabled = true;
-            // } else if (mix === "drum") {
-            //     tracks[1].enabled = true;
-            // } else if (mix === "synth") {
-            //     tracks[2].enabled = true;
-            // }
-        } else {
-            console.log("Only one video track");
-        }
-    };
-</script>
-
-<script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+<div>
+{%- include nime2025_videojs.html -%}
+</div>
