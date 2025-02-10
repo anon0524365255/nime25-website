@@ -27,7 +27,8 @@ Videos of short performance recordings are provided for each
 patch, which are annotated with reflections on design thinking and motivations. 
 We used the real-time timbre remapping system presented in the paper and each patch 
 either exemplifies a feature of the system or presents an intervention applied to overcome
-a limitation or achieve an aesthetic goal.
+a limitation or achieve an aesthetic goal. A [concept map](#concept-map) highlights important
+features that emerged during the curation of this portfolio and connects individual patches.
 
 ### Derailer
 
