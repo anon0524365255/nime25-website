@@ -125,7 +125,7 @@
     .enter()
     .append("text")
     .attr("class", "label")
-    .attr("dy", "-1.2em") // Position slightly above each shape
+    .attr("dy", "-1.4em") // Position slightly above each shape
     .attr("text-anchor", "middle")
     .style("pointer-events", "none") // Let clicks pass through to shapes
     .style("font-size", "0.8rem")
@@ -202,12 +202,19 @@
       .on("end", dragended);
   }
 
-    // const aspect = 800 / 600;
-    // jQuery(window).on("resize", function() {
-    //     const targetWidth = jQuery('.d3-wrapper').width();
-    //     console.log(targetWidth);
-    //     svg.attr("width", targetWidth);
-    //     svg.attr("height", targetWidth / aspect);
-    //     simulation.tick();
-    // });
+    // Add Legend
+    svg.append("circle")
+        .attr("cx",nodeRadius * 2.0)
+        .attr("cy",nodeRadius * 2.0)
+        .attr("r", nodeRadius * 0.75)
+        .style("fill", "#69b3a2");
+    svg.append("rect")
+        .attr("x",nodeRadius * 1.25)
+        .attr("y",nodeRadius * 3.5)
+        .attr("width", nodeRadius * 1.5)
+        .attr("height", nodeRadius * 1.5)
+        .style("fill", "#ffa600")
+    svg.append("text").attr("x",nodeRadius * 3.25).attr("y",nodeRadius * 2.).text("patch").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x",nodeRadius * 3.25).attr("y",nodeRadius * 4.25).text("concept").style("font-size", "15px").attr("alignment-baseline","middle")
+
 </script>
