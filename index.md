@@ -9,7 +9,7 @@ layout: post
 title: "Designing Percussive Timbre Remappings: Negotiating Audio Representations and Evolving Parameter Spaces"
 ---
 
-Website accompanying the NIME 2025 submission. See [Appendix PDF](/assets/pdf/NIME_2025_Appendix.pdf) for details on feature extraction and neural network hyperparameter tuning. All code for Max/MSP patches and data-driven
+Website accompanying the NIME 2025 submission. See [Appendix PDF]({{ "assets/pdf/NIME_2025_Appendix.pdf" | relative_url }}) for details on feature extraction and neural network hyperparameter tuning. All code for Max/MSP patches and data-driven
 experiments conducted in Python will be publicly released alongside the paper.
 
 ## Annotated Portfolio
